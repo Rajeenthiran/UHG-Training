@@ -1,0 +1,29 @@
+<aura:component>
+  <header class="header">
+    <nav>
+      <a href="#home">
+        <img
+          id="home"
+          class="logo"
+          src="https://nope5-dev-ed--c.documentforce.com/servlet/servlet.FileDownload?file=0155g000000syu8"
+          alt="logo"
+        />
+      </a>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li
+          ><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a
+        ></li>
+      </ul>
+    </nav>
+    <div class="title">
+      <h1 class="par">Union <span>HealthCare</span></h1>
+      <p class="par">Ten of the 20 fastest growing occupations are healthcare related.</p>
+     
+    </div>
+  </header>
+</aura:component>

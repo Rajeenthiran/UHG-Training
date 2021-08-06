@@ -1,0 +1,6 @@
+<aura:component  implements="flexipage:availableForAllPageTypes,force:hasRecordId" access="global" >
+	 <lightning:card title="Search A Physician" class="slds-m-bottom_10px">
+          <!--PHYSICIAN SEARCH COMPONENT -->
+        <c:PSearchForm/>
+    </lightning:card>
+</aura:component>

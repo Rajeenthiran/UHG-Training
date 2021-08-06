@@ -1,0 +1,33 @@
+<aura:component controller="PhysicianController" access="global">
+     <aura:attribute name="physicians" type="List"/>
+     <aura:attribute name="phName" type="String"/>
+      <aura:attribute name="error" type="String"/>
+          <aura:attribute name="success" type="String"/>
+     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+	 <lightning:layout horizontalAlign="center">  
+        <lightning:layoutItem flexibility="auto" padding="horizontal-small" class="slds-grid_vertical-align-center">
+            <lightning:input aura:id="pName" label="Physician Name" value="{!v.phName}"/>
+            <aura:if  isTrue="{!v.error}" >
+                <div class="error">{!v.error}</div>
+            </aura:if>
+            <aura:if  isTrue="{!v.success}" >
+                <div class="success">{!v.success}</div>
+            </aura:if>
+            
+           
+        </lightning:layoutItem>
+        
+        <lightning:layoutItem flexibility="auto" padding="around-medium" class="slds-grid_vertical-align-center">
+            <lightning:button class="slds-button" variant="brand" label="Search" onclick="{!c.onFormSubmit}" aura:id="SearchButton"/>                        
+        </lightning:layoutItem>  
+        
+    </lightning:layout>
+     <lightning:card  class="slds-m-bottom_10px" title="Matching Physican">
+      	<p class="slds-p-horizontal_small">
+            <aura:iteration items="{!v.physicians}" var="p">
+                <!--PHYSICIAN RESULTS COMPONENT -->
+                <c:PResults phy="{!p}"/>
+            </aura:iteration>
+         </p>
+    </lightning:card>
+</aura:component>

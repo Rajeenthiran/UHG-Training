@@ -1,0 +1,28 @@
+<aura:component >
+     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="income" type="Object"/>
+    <aura:attribute name="myIncomes" type="List"/>
+    <aura:registerEvent name="totalIncomeEvent" type="c:IncomeEvent"/>
+    <aura:handler name="totalIncomeEvent" event="c:IncomeEvent" action="{!c.handleRegister}"/>
+      <center><ui:spinner aura:id="spinner"/></center>
+   <lightning:card title="SLDC CARD" iconName="standard:account">
+       <!--  <aura:set attribute="actions"> -->
+         <lightning:button label="Show/Hide Form" variant="brand" onclick="{!c.handleIncomeForm}"></lightning:button>
+    <!-- </aura:set> -->
+       <p class="slds-p-horizontal_small">
+        <div aura:id="incomeForm"  class="hide">
+                  
+          <lightning:Input  aura:id="source" name="source" required="true" label="Income Source"></lightning:Input>
+          <lightning:Input  aura:id="amount" name="amount" required="true" label="Income Amount"></lightning:Input>
+                  <br/>       
+           <lightning:button name="addIncome" label="Add Income" onclick="{!c.addIncome}" variant="brand"></lightning:button>
+       </div>
+           <br/>
+       <div >
+           <lightning:datatable data="{!v.income}" columns="{!v.myIncomes}" keyField="Sno" />
+          
+       </div>    
+       </p>
+    
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,11 @@
+<apex:page showHeader="false" sidebar="false" standardController="Physician__c" docType="html-5.0">
+     <ggo:GeocodeComponent recId="{!Physician__c.Id}" recType="Physician__c" 
+         street="Street__c" city="City__c" 
+         postalCode="Zip__c" state="State__c" 
+         country="Country__c" 
+         geoLoc="GeoLoc__c"  displayfields="Name" 
+         normStreet="Street__c" normCity="City__c" 
+         normPostalCode="Zip__c" normState="State__c" 
+         normCountry="Country__c"  
+         maxResults="50" nearbyDistance="0.4"/>
+ </apex:page>

@@ -1,0 +1,121 @@
+.THIS nav{
+  
+  width: 80%;
+  margin: auto;
+}
+.THIS div.title{
+  width: 80%;
+  margin: auto;
+  margin-top:300px;
+   
+}
+.THIS.header { 
+  padding: 0;
+  background: url(https://officialpsds.com/imageview/r0/96/r096x9_large.png?1529465054);
+  background-size: 80%;
+  background-position: 250px 60px;
+  height: 800px;
+  background-repeat: no-repeat;
+}
+.THIS img.logo {
+  width: 167px;
+  height: 110px;
+  margin-top: 20px;
+  
+}
+
+.THIS ul {
+  float: right;
+  list-style-type: none;
+  text-transform: uppercase;
+  margin-top: 65px;
+}
+.THIS li {
+  display: inline-block;
+}
+.THIS a {
+  padding: 20px 18px;
+  color: #1d2260;
+  text-decoration: none;
+}
+.THIS ul.menu li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1.5em;
+  padding: 0;
+}
+.THIS ul.menu a {
+  padding: 0.5em 0;
+  position: relative;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.THIS ul.menu a:before,
+.THIS ul.menu a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.THIS ul.menu a:before {
+  bottom: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: #2980b9;
+}
+.THIS ul.menu a:after {
+  left: 0;
+  top: 0;
+  padding: 0.5em 0;
+  position: absolute;
+  content: attr(data-hover);
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
+.THIS ul.menu a:hover:before,
+.THIS ul.menu .current a:before {
+  opacity: 1;
+  width: 100%;
+}
+.THIS ul.menu a:hover:after,
+.THIS ul.menu .current a:after {
+  max-width: 100%;
+}
+.THIS p {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 17px;
+  width: 590px;
+  color: #1d2260;
+  padding: 0 60px;
+}
+.THIS h1 {
+  font-size: 85px;
+}
+.THIS h2 {
+  font-size: 45px;
+  padding: 0 50px;
+}
+.THIS h3 {
+  font-size: 35px;
+  padding: 0 50px;
+}
+.THIS h4 {
+  font-size: 16px;
+  padding: 0;
+}
+.THIS h1,
+.THIS h2,
+.THIS h3,
+.THIS h4 {
+  color: #1d2260;
+}
+.THIS .par {
+  margin: 0 110px 20px 30px;
+  padding: 0;
+}
+.THIS span {
+  color: #e34543;
+}

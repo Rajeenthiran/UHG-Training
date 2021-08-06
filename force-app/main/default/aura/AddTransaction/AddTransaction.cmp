@@ -1,0 +1,43 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" controller="TransactionController">
+      <aura:attribute name="error" type="String" />
+     <!-- SHOW SUCCESS MESSAGE -->
+    <aura:attribute name="success" type="String" />
+    <aura:attribute name="totalAmount" type="String" default="0" />
+     <aura:attribute name="myNewTransaction" type="Transcation__c" default="{ 'sobjectType': 'Transcation__c'}"/>
+    <aura:attribute name="myTransaction" type="Transcation__c" default="{ 'sobjectType': 'Transcation__c'}"/>
+    <aura:attribute name="transactionList" type="List"/>
+    <aura:attribute name="hi" type="String"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="totalAmountComponentEvent" event="c:AmountComponentEvent"  action="{!c.handleAmountComponentEvent}"></aura:handler>
+    
+	 <lightning:card title="Transaction" iconName="standard:account">
+         
+        <aura:set attribute="actions">
+     			<lightning:button label="Show/Hide Form" variant="brand" onclick="{!c.handleTransactionForm}">
+             	</lightning:button>
+     	 </aura:set>
+         <div class="row">
+               <p class="slds-p-horizontal_small">
+        <div aura:id="TransactionForm"  class="hide">
+             <lightning:Input  aura:id="amount" name="Amount" required="true" label="Amount" value="{!v.myNewTransaction.Amount__c}"></lightning:Input>
+                  <br/>      
+          <lightning:Input  type="date" aura:id="TransactionDate" name="TransactionDate" required="true" label="Transaction Date" value="{!v.myNewTransaction.Transaction_Date__c}"></lightning:Input>
+                  <br/>       
+           <lightning:button name="addTransaction" label="Add Transaction" onclick="{!c.addTransaction}" variant="brand"></lightning:button>
+       </div>
+                   <br/>
+    <aura:if isTrue="{!v.success}">
+    <div class="success">{!v.success}</div>
+  </aura:if>
+    <aura:if isTrue="{!v.error}"> <div class="error">{!v.error}</div> </aura:if>
+  
+       </p>
+         </div>
+         <c:ViewTransaction Transaction="{!v.myTransaction}"  />
+         <br/>
+         <lightning:card title="Total Amount" iconName="standard:event">
+              <p class="slds-p-horizontal_medium">{!v.totalAmount}</p>
+         </lightning:card>
+        
+    </lightning:card>
+</aura:component>

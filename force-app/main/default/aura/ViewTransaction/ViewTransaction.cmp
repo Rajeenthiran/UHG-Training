@@ -1,0 +1,13 @@
+<aura:component  access="global" controller="TransactionController">
+    <aura:attribute name="Transaction" type="Transcation__c" default="{ 'sobjectType': 'Transcation__c'}"/>
+    <aura:attribute name="myTransaction" type="List" />
+    
+    <aura:registerEvent name="totalAmountComponentEvent" type="c:AmountComponentEvent"></aura:registerEvent>
+    <!-- Defining a handler for lightning event -->
+    <aura:handler name="totalAmountComponentEvent" event="c:AmountComponentEvent"  action="{!c.handleAmountComponentEvent}"></aura:handler>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <lightning:datatable data="{!v.Transaction}" columns="{!v.myTransaction}" keyField="id" />
+    <br/>
+    <lightning:button variant="brand" label="Total Amount" onclick="{!c.totalAmount}"></lightning:button>
+</aura:component>

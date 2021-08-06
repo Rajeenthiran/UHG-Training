@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT">
+    <aura:attribute name = "TransactionRecord" type = "Transcation__c" />
+    <aura:attribute name = "myName" type = "String" default="Hi" />
+</aura:event>

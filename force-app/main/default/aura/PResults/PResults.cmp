@@ -1,0 +1,68 @@
+<aura:component controller="PhysicianController" access="global">
+  <aura:attribute name="phy" type="Object" />
+     <!-- SHOW ERROR MESSAGE -->
+  <aura:attribute name="error" type="String" />
+     <!-- SHOW SUCCESS MESSAGE -->
+  <aura:attribute name="success" type="String" />
+      <!-- VIEW PHYSISICAN DETAILS-->
+  <div class="demo-only" style="width:30rem">
+    <article class="slds-tile slds-media">
+      <div class="slds-media__figure">
+        <span class="slds-avatar slds-avatar_circle slds-avatar_medium">
+          <img
+            alt=""
+            src="https://nope5-dev-ed--c.documentforce.com/servlet/servlet.FileDownload?file=0155g000000t0bz"
+          />
+        </span>
+      </div>
+      
+      <div class="slds-media__body">
+        <h3 class="slds-tile__title slds-truncate">
+          {!v.phy.basic.name_prefix}{!v.phy.basic.name}
+        </h3>
+        <div class="slds-tile__detail">
+          <dl class="slds-list_horizontal slds-wrap">
+            <dt
+              class="slds-item_label slds-text-color_weak slds-truncate"
+              title="First Label"
+              >Number:</dt
+            >
+            <dd
+              class="slds-item_detail slds-truncate"
+              title="Description for first label"
+              >{!v.phy.number}</dd
+            >
+            <dt
+              class="slds-item_label slds-text-color_weak slds-truncate"
+              title="Second Label"
+              >Gender:</dt
+            >
+            <dd
+              class="slds-item_detail slds-truncate"
+              title="Description for second label"
+              >
+              <aura:if isTrue="{!equals(v.phy.basic.gender,'M')}">
+                Male <aura:set attribute="else"> Female </aura:set>
+              </aura:if>
+            </dd>
+            <br />
+            <dd
+              class="slds-item_detail slds-truncate"
+              title="Description for second label"
+            >
+              <button
+                class="slds-button slds-button_success"
+                onclick="{!c.insertPhysicianMethod}"
+                >INSERT</button
+              >
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </article>
+  </div>
+  <aura:if isTrue="{!v.error}"> <div class="error">{!v.error}</div> </aura:if>
+  <aura:if isTrue="{!v.success}">
+    <div class="success">{!v.success}</div>
+  </aura:if>
+</aura:component>

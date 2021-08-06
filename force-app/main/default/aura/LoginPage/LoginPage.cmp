@@ -1,0 +1,36 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global" >
+      <aura:attribute name="Username" type="String"/>
+      <aura:attribute name="Password" type="String"/>
+	<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <h2 style="text-align:center">Login</h2>
+     
+
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
+
+        <lightning:input aura:id="username" label="Username" value="{!v.Username}"/>
+        <lightning:input aura:id="password" label="Password" value="{!v.Password}"/>
+           <lightning:layoutItem flexibility="auto" padding="around-medium" class="slds-grid_vertical-align-center">
+            <lightning:button class="slds-button" variant="brand" label="Search" onclick="{!c.onFormSubmit}" aura:id="SearchButton"/>                        
+        </lightning:layoutItem>  
+      </div>
+      
+    </div>
+  </form>
+</div>
+
+<div class="bottom-container">
+  <div class="row">
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Sign up</a>
+    </div>
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Forgot password?</a>
+    </div>
+  </div>
+</div>
+</aura:component>

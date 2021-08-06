@@ -1,0 +1,9 @@
+<template>
+   <div>
+    <lightning-input type="datetime" name="input1" label="Enter a start date" onchange={handleStartDate}></lightning-input>
+    <div class="error">{startErrorMsg}</div>
+    <br/>
+    <lightning-input type="datetime" name="input2" label="Enter a end date" onchange={handleEndDate}></lightning-input>
+    <div class="error">{endErrorMsg}</div>
+   </div>
+</template>

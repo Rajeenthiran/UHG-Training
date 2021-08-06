@@ -1,0 +1,648 @@
+{
+    "result_count": 10,
+    "results": [
+        {
+            "enumeration_type": "NPI-1",
+            "number": 1881631117,
+            "last_updated_epoch": 1183852800,
+            "created_epoch": 1149206400,
+            "basic": {
+                "first_name": "PEDER",
+                "last_name": "KNUTSEN",
+                "middle_name": "N",
+                "credential": "MD",
+                "sole_proprietor": "NO",
+                "gender": "M",
+                "enumeration_date": "2006-06-02",
+                "last_updated": "2007-07-08",
+                "status": "A",
+                "name": "KNUTSEN PEDER"
+            },
+            "other_names": [],
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "4050 COON RAPIDS BLVD NW",
+                    "address_2": "",
+                    "city": "COON RAPIDS",
+                    "state": "MN",
+                    "postal_code": "554332522",
+                    "telephone_number": "763-236-6786"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "PO BOX 47159",
+                    "address_2": "",
+                    "city": "PLYMOUTH",
+                    "state": "MN",
+                    "postal_code": "554470159",
+                    "telephone_number": "763-559-3779",
+                    "fax_number": "763-450-3986"
+                }
+            ],
+            "taxonomies": [
+                {
+                    "code": "207L00000X",
+                    "desc": "Anesthesiology",
+                    "primary": true,
+                    "state": "MN",
+                    "license": "38227"
+                }
+            ],
+            "identifiers": []
+        },
+        {
+            "enumeration_type": "NPI-1",
+            "number": 1598793218,
+            "last_updated_epoch": 1183852800,
+            "created_epoch": 1151539200,
+            "basic": {
+                "name_prefix": "DR.",
+                "first_name": "PEDER",
+                "last_name": "HANCHER",
+                "middle_name": "J",
+                "credential": "DDS",
+                "sole_proprietor": "YES",
+                "gender": "M",
+                "enumeration_date": "2006-06-29",
+                "last_updated": "2007-07-08",
+                "status": "A",
+                "name": "HANCHER PEDER"
+            },
+            "other_names": [],
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "12 MARTIN ST",
+                    "address_2": "",
+                    "city": "WELLSVILLE",
+                    "state": "NY",
+                    "postal_code": "148951057",
+                    "telephone_number": "585-593-4990",
+                    "fax_number": "585-593-4991"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "12 MARTIN ST",
+                    "address_2": "",
+                    "city": "WELLSVILLE",
+                    "state": "NY",
+                    "postal_code": "148951057",
+                    "telephone_number": "585-593-4990",
+                    "fax_number": "585-593-4991"
+                }
+            ],
+            "taxonomies": [
+                {
+                    "code": "1223G0001X",
+                    "desc": "Dentist General Practice",
+                    "primary": true,
+                    "state": "NY",
+                    "license": "026967-1"
+                }
+            ],
+            "identifiers": []
+        },
+        {
+            "enumeration_type": "NPI-1",
+            "number": 1629001656,
+            "last_updated_epoch": 1304899200,
+            "created_epoch": 1152489600,
+            "basic": {
+                "first_name": "PEDER",
+                "last_name": "SVINGEN",
+                "middle_name": "HERBERT",
+                "sole_proprietor": "NO",
+                "gender": "M",
+                "enumeration_date": "2006-07-10",
+                "last_updated": "2011-05-09",
+                "status": "A",
+                "name": "SVINGEN PEDER"
+            },
+            "other_names": [],
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "400 E 3RD ST",
+                    "address_2": "",
+                    "city": "DULUTH",
+                    "state": "MN",
+                    "postal_code": "558051951",
+                    "telephone_number": "218-786-8364"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "400 E 3RD ST",
+                    "address_2": "",
+                    "city": "DULUTH",
+                    "state": "MN",
+                    "postal_code": "558051951",
+                    "telephone_number": "218-786-8364"
+                }
+            ],
+            "taxonomies": [
+                {
+                    "code": "2084P0800X",
+                    "desc": "Psychiatry & Neurology Psychiatry",
+                    "primary": true,
+                    "state": "MN",
+                    "license": "31481"
+                }
+            ],
+            "identifiers": [
+                {
+                    "identifier": "31971400",
+                    "code": "05",
+                    "desc": "MEDICAID",
+                    "state": "WI",
+                    "issuer": ""
+                },
+                {
+                    "identifier": "795097700",
+                    "code": "05",
+                    "desc": "MEDICAID",
+                    "state": "MN",
+                    "issuer": ""
+                }
+            ]
+        },
+        {
+            "enumeration_type": "NPI-1",
+            "number": 1013920842,
+            "last_updated_epoch": 1183852800,
+            "created_epoch": 1155513600,
+            "basic": {
+                "name_prefix": "DR.",
+                "first_name": "PEDER",
+                "last_name": "PIERING",
+                "middle_name": "NELSON",
+                "credential": "PHD",
+                "sole_proprietor": "YES",
+                "gender": "M",
+                "enumeration_date": "2006-08-14",
+                "last_updated": "2007-07-08",
+                "status": "A",
+                "name": "PIERING PEDER"
+            },
+            "other_names": [],
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "2015 E NEWPORT AVE",
+                    "address_2": "SUITE 409",
+                    "city": "MILWAUKEE",
+                    "state": "WI",
+                    "postal_code": "532112984",
+                    "telephone_number": "414-259-3900",
+                    "fax_number": "414-963-0000"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "2015 E NEWPORT AVE",
+                    "address_2": "SUITE 409",
+                    "city": "MILWAUKEE",
+                    "state": "WI",
+                    "postal_code": "532112984",
+                    "telephone_number": "414-259-3900",
+                    "fax_number": "414-963-0000"
+                }
+            ],
+            "taxonomies": [
+                {
+                    "code": "103TC0700X",
+                    "desc": "Psychologist Clinical",
+                    "primary": true,
+                    "state": "WI",
+                    "license": "2296-057"
+                }
+            ],
+            "identifiers": [
+                {
+                    "identifier": "43578200",
+                    "code": "05",
+                    "desc": "MEDICAID",
+                    "state": "WI",
+                    "issuer": ""
+                }
+            ]
+        },
+        {
+            "enumeration_type": "NPI-1",
+            "number": 1932206273,
+            "last_updated_epoch": 1246233600,
+            "created_epoch": 1158710400,
+            "basic": {
+                "name_prefix": "DR.",
+                "first_name": "PEDER",
+                "last_name": "SHEA",
+                "middle_name": "M.",
+                "credential": "M.D.",
+                "sole_proprietor": "NO",
+                "gender": "M",
+                "enumeration_date": "2006-09-20",
+                "last_updated": "2009-06-29",
+                "status": "A",
+                "name": "SHEA PEDER"
+            },
+            "other_names": [],
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "3811 VALLEY CENTRE DR",
+                    "address_2": "",
+                    "city": "SAN DIEGO",
+                    "state": "CA",
+                    "postal_code": "921303318",
+                    "telephone_number": "858-764-3310"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "54433 FILE",
+                    "address_2": "",
+                    "city": "LOS ANGELES",
+                    "state": "CA",
+                    "postal_code": "900740001"
+                }
+            ],
+            "taxonomies": [
+                {
+                    "code": "207RC0000X",
+                    "desc": "Internal Medicine Cardiovascular Disease",
+                    "primary": true,
+                    "state": "CA",
+                    "license": "G36280"
+                }
+            ],
+            "identifiers": []
+        },
+        {
+            "enumeration_type": "NPI-1",
+            "number": 1255414025,
+            "last_updated_epoch": 1183852800,
+            "created_epoch": 1161561600,
+            "basic": {
+                "first_name": "PEDER",
+                "last_name": "GAALAAS",
+                "middle_name": "AITON",
+                "credential": "DDS",
+                "sole_proprietor": "NO",
+                "gender": "M",
+                "enumeration_date": "2006-10-23",
+                "last_updated": "2007-07-08",
+                "status": "A",
+                "name": "GAALAAS PEDER"
+            },
+            "other_names": [],
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "504 NW FIRST AVE",
+                    "address_2": "",
+                    "city": "GRAND RAPIDS",
+                    "state": "MN",
+                    "postal_code": "55744",
+                    "telephone_number": "218-326-0377"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "504 NW FIRST AVE",
+                    "address_2": "SUITE 200",
+                    "city": "GRAND RAPIDS",
+                    "state": "MN",
+                    "postal_code": "55744",
+                    "telephone_number": "218-326-0377",
+                    "fax_number": "218-326-0378"
+                }
+            ],
+            "taxonomies": [
+                {
+                    "code": "1223X0400X",
+                    "desc": "Dentist Orthodontics and Dentofacial Orthopedics",
+                    "primary": true,
+                    "state": "MN",
+                    "license": "9583"
+                }
+            ],
+            "identifiers": [
+                {
+                    "identifier": "443485",
+                    "code": "01",
+                    "desc": "Other",
+                    "state": "",
+                    "issuer": "UNITED CONCORDIA"
+                },
+                {
+                    "identifier": "71211GA",
+                    "code": "01",
+                    "desc": "Other",
+                    "state": "MN",
+                    "issuer": "BCBS"
+                }
+            ]
+        },
+        {
+            "enumeration_type": "NPI-1",
+            "number": 1235218942,
+            "last_updated_epoch": 1358294400,
+            "created_epoch": 1162512000,
+            "basic": {
+                "name_prefix": "DR.",
+                "first_name": "PEDER",
+                "last_name": "HORNER",
+                "middle_name": "E.",
+                "credential": "M.D.",
+                "sole_proprietor": "NO",
+                "gender": "M",
+                "enumeration_date": "2006-11-03",
+                "last_updated": "2013-01-16",
+                "status": "A",
+                "name": "HORNER PEDER"
+            },
+            "other_names": [],
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "1746 COLE BLVD",
+                    "address_2": "SUITE 150",
+                    "city": "LAKEWOOD",
+                    "state": "CO",
+                    "postal_code": "804013208",
+                    "telephone_number": "303-914-8800",
+                    "fax_number": "303-716-3777"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "1746 COLE BLVD",
+                    "address_2": "SUITE 150",
+                    "city": "LAKEWOOD",
+                    "state": "CO",
+                    "postal_code": "804013208",
+                    "telephone_number": "303-914-8800",
+                    "fax_number": "303-716-3777"
+                }
+            ],
+            "taxonomies": [
+                {
+                    "code": "2085R0202X",
+                    "desc": "Radiology Diagnostic Radiology",
+                    "primary": false,
+                    "state": "CO",
+                    "license": "46570"
+                },
+                {
+                    "code": "2085R0204X",
+                    "desc": "Radiology Vascular & Interventional Radiology",
+                    "primary": true,
+                    "state": "CO",
+                    "license": "46570"
+                }
+            ],
+            "identifiers": []
+        },
+        {
+            "enumeration_type": "NPI-1",
+            "number": 1568558211,
+            "last_updated_epoch": 1433866552,
+            "created_epoch": 1159920000,
+            "basic": {
+                "name_prefix": "DR.",
+                "first_name": "PEDER",
+                "last_name": "PEDERSEN",
+                "middle_name": "J",
+                "credential": "M.D.",
+                "sole_proprietor": "NO",
+                "gender": "M",
+                "enumeration_date": "2006-10-04",
+                "last_updated": "2015-06-09",
+                "status": "A",
+                "name": "PEDERSEN PEDER"
+            },
+            "other_names": [],
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "1250 E 3900 S",
+                    "address_2": "SUITE 360",
+                    "city": "SALT LAKE CITY",
+                    "state": "UT",
+                    "postal_code": "841241348",
+                    "telephone_number": "801-263-3041",
+                    "fax_number": "801-263-8485"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "6360 S 3000 E",
+                    "address_2": "#220",
+                    "city": "SALT LAKE CITY",
+                    "state": "UT",
+                    "postal_code": "841216923"
+                }
+            ],
+            "taxonomies": [
+                {
+                    "code": "207RG0100X",
+                    "desc": "Internal Medicine Gastroenterology",
+                    "primary": true,
+                    "state": "UT",
+                    "license": "324585"
+                }
+            ],
+            "identifiers": [
+                {
+                    "identifier": "54206",
+                    "code": "01",
+                    "desc": "Other",
+                    "state": "UT",
+                    "issuer": "PUBLIC EMPLOYEES"
+                },
+                {
+                    "identifier": "QM0000032802",
+                    "code": "01",
+                    "desc": "Other",
+                    "state": "UT",
+                    "issuer": "ALTIUS"
+                }
+            ]
+        },
+        {
+            "enumeration_type": "NPI-1",
+            "number": 1548339237,
+            "last_updated_epoch": 1450175812,
+            "created_epoch": 1162857600,
+            "basic": {
+                "name_prefix": "DR.",
+                "first_name": "PEDER",
+                "last_name": "MORSE",
+                "middle_name": "BARTON",
+                "credential": "DDS",
+                "sole_proprietor": "NO",
+                "gender": "M",
+                "enumeration_date": "2006-11-07",
+                "last_updated": "2015-12-15",
+                "status": "A",
+                "name": "MORSE PEDER"
+            },
+            "other_names": [],
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "306 W SUPERIOR ST",
+                    "address_2": "SUITE 601",
+                    "city": "DULUTH",
+                    "state": "MN",
+                    "postal_code": "558021803",
+                    "telephone_number": "218-727-2349",
+                    "fax_number": "218-727-2531"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "1420 LONDON RD 208",
+                    "address_2": "",
+                    "city": "DULUTH",
+                    "state": "MN",
+                    "postal_code": "558052422",
+                    "telephone_number": "218-727-2349",
+                    "fax_number": "218-727-2531"
+                }
+            ],
+            "taxonomies": [
+                {
+                    "code": "1223G0001X",
+                    "desc": "Dentist General Practice",
+                    "primary": true,
+                    "state": "MN",
+                    "license": "D11825"
+                }
+            ],
+            "identifiers": [
+                {
+                    "identifier": "889453100",
+                    "code": "01",
+                    "desc": "Other",
+                    "state": "MN",
+                    "issuer": "STATE INS GRP #"
+                }
+            ]
+        },
+        {
+            "enumeration_type": "NPI-1",
+            "number": 1407907165,
+            "last_updated_epoch": 1183852800,
+            "created_epoch": 1168905600,
+            "basic": {
+                "name_prefix": "DR.",
+                "first_name": "PEDER",
+                "last_name": "JENSEN",
+                "middle_name": "J",
+                "credential": "D.M.D.",
+                "sole_proprietor": "NO",
+                "gender": "M",
+                "enumeration_date": "2007-01-16",
+                "last_updated": "2007-07-08",
+                "status": "A",
+                "name": "JENSEN PEDER"
+            },
+            "other_names": [],
+            "addresses": [
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "LOCATION",
+                    "address_type": "DOM",
+                    "address_1": "2501 CRESTWOOD RD STE 102",
+                    "address_2": "",
+                    "city": "NORTH LITTLE ROCK",
+                    "state": "AR",
+                    "postal_code": "721167615",
+                    "telephone_number": "501-758-6182",
+                    "fax_number": "501-758-6184"
+                },
+                {
+                    "country_code": "US",
+                    "country_name": "United States",
+                    "address_purpose": "MAILING",
+                    "address_type": "DOM",
+                    "address_1": "2501 CRESTWOOD RD STE 102",
+                    "address_2": "",
+                    "city": "NORTH LITTLE ROCK",
+                    "state": "AR",
+                    "postal_code": "721167615",
+                    "telephone_number": "501-758-6182",
+                    "fax_number": "501-758-6184"
+                }
+            ],
+            "taxonomies": [
+                {
+                    "code": "1223P0300X",
+                    "desc": "Dentist Periodontics",
+                    "primary": true,
+                    "state": "AR",
+                    "license": "2544"
+                }
+            ],
+            "identifiers": [
+                {
+                    "identifier": "2544",
+                    "code": "01",
+                    "desc": "Other",
+                    "state": "AR",
+                    "issuer": "ARKANSAS DENTAL LICENSE"
+                }
+            ]
+        }
+    ]
+}
