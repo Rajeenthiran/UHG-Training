@@ -6,14 +6,20 @@ export default class ResultsPhysiicanLWC extends LightningElement {
     @track succesMsg='';
     @track errorMsg='';
     @track phyNumber=''
-
+    @track isModalOpen=false;
+    viewPhysician(){
+       this.isModalOpen=true;
+    }
+    closeModal(){
+        this.isModalOpen=false;
+    }
     handleInsertPhysician(){
        
       if(this.phy!=null){
          let phyObject={
              phyname:this.phy.basic.name,
              gender:this.phy.basic.gender,
-                pid:this.phy.number,
+             pid:this.phy.number,
              mobile:this.phy.addresses[0].telephone_number,
              address:this.phy.addresses[0].address_1,
              city:this.phy.addresses[0].city,
@@ -27,7 +33,7 @@ export default class ResultsPhysiicanLWC extends LightningElement {
              console.log(res);
              if(res.status=='success'){
                  this.succesMsg=res.message;
-                 this.errorMsg='';
+                 this.errorMsg='';  
              }else{
                  this.errorMsg='Physician Already Added';
                  this.succesMsg='';
