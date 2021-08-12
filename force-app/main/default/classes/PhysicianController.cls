@@ -11,16 +11,14 @@ public with sharing class PhysicianController {
            // Get Resutls and Map to object get from string 
            Map<String,Object> physician=(Map<String,Object>) JSON.deserializeUntyped(response.getBody());
            List<Object> results = (List<Object>) physician.get('results');
+           List<Object> returnResults=null;
            Integer result_count=(Integer) physician.get('result_count');
           //  result count is 10 only but governer limits 100  so no care about governer limits
-           
             if(result_count>0){
                 // return physyicans
-                return results;
-            }else{
-                //  return null if there are no results
-                return null;
+                returnResults= results;
             }
+            return returnResults;
         }else if(response.getStatusCode()==400){
             System.debug('The request couldn’t be understood, usually because the JSON or XML body contains an error.');
             return null;

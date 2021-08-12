@@ -43,47 +43,60 @@ public class PhysicianControllerTest {
          Test.stopTest();
     }
     
-    @isTest static void getPhysicianNewTest(){
+    @isTest static void getPhysicianCalloutTest(){
           // Create the mock response based on a static resource
+        Test.startTest(); 
         StaticResourceCalloutMock mock = new StaticResourceCalloutMock();
         mock.setStaticResource('GetPhysicianResource');
         mock.setStatusCode(200);
         mock.setHeader('Content-Type', 'application/json;charset=UTF-8');
         // Associate the callout with a mock response
         Test.setMock(HttpCalloutMock.class, mock);
-        
-        
-         List<Object> results1=PhysicianController.getPhysician('john');
-         List<Object> results2=PhysicianController.getPhysician('545');
-         System.assertEquals(null, results1,'No items here.'); 
+        List<Object> results1=PhysicianController.getPhysician('peter');
+        System.assertNotEquals(null, results1,
+          'There are items here.'); 
          System.assertEquals(10, results1.size(),
           'The array should only contain 10 items.'); 
-          System.assertEquals(null, results2,
+        Test.stopTest();
+         
+        
+       
+    }
+    @isTest static void getPhysicianTest(){
+         Test.startTest(); 
+        List<Object> results2=PhysicianController.getPhysician('545');
+           System.assertEquals(null, results2,
           'There are items here.'); 
-         System.assertEquals(0, results2.size(),
-          'The array should only contain 0 items.');
-        
-        
-        PhysicianCallouts phyCall=new PhysicianCallouts();
-        // Call method to test 
-        HttpResponse result = phyCall.searchPhysician('peter');
-        // Verify mock response is not null
-        System.assertNotEquals(null,result,
-            'The callout returned a null response.');
-      
-        // Verify status code
-        System.assertEquals(200,result.getStatusCode(),
-          'The status code is not 200.');
-        // Verify content type   
-        System.assertEquals('application/json;charset=UTF-8',
-          result.getHeader('Content-Type'),
-          'The content type value is not expected.');  
-        // Verify the array contains 10 items     
-        Map<String, Object> results = (Map<String, Object>) 
-            JSON.deserializeUntyped(result.getBody());
-        List<Object> physicians = (List<Object>) results.get('results');
-        System.assertEquals(10, physicians.size(),
-          'The array should only contain 10 items.');  
+         List<Object> results3=PhysicianController.getPhysician('par');
+           System.assertEquals(null, results3,
+          'There are items here.'); 
+         Test.stopTest();
+    }
+    @isTest static void getPhysicianCalloutErrorTest(){
+         Test.startTest(); 
+        StaticResourceCalloutMock mock = new StaticResourceCalloutMock();
+        mock.setStaticResource('GetPhysicianResource');
+        mock.setStatusCode(400);
+        mock.setHeader('Content-Type', 'application/json;charset=UTF-8');
+        // Associate the callout with a mock response
+        Test.setMock(HttpCalloutMock.class, mock);
+        List<Object> results1=PhysicianController.getPhysician('peter');
+        System.assertEquals(null, results1,
+          'There are items here.'); 
+        Test.stopTest();
+    }
+     @isTest static void getPhysicianCalloutNoErrorTest(){
+         Test.startTest(); 
+        StaticResourceCalloutMock mock = new StaticResourceCalloutMock();
+        mock.setStaticResource('GetPhysicianResource');
+        mock.setStatusCode(300);
+        mock.setHeader('Content-Type', 'application/json;charset=UTF-8');
+        // Associate the callout with a mock response
+        Test.setMock(HttpCalloutMock.class, mock);
+        List<Object> results1=PhysicianController.getPhysician('peter');
+        System.assertEquals(null, results1,
+          'There are items here.'); 
+        Test.stopTest();
     }
    
 }
