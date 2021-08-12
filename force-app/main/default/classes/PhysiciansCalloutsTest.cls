@@ -7,7 +7,7 @@ private class PhysiciansCalloutsTest {
         mock.setStatusCode(200);
         mock.setHeader('Content-Type', 'application/json;charset=UTF-8');
         // Associate the callout with a mock response
-        //Test.setMock(HttpCalloutMock.class, mock);
+        Test.setMock(HttpCalloutMock.class, mock);
          PhysicianCallouts phyCall=new PhysicianCallouts();
         // Call method to test
         HttpResponse result = phyCall.searchPhysician('peter');
