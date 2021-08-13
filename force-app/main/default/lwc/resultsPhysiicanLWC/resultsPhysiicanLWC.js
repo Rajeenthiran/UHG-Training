@@ -7,11 +7,25 @@ export default class ResultsPhysiicanLWC extends LightningElement {
     @track errorMsg='';
     @track phyNumber=''
     @track isModalOpen=false;
+    @track genderCheck=false;
+
+    connectedCallback(){
+      if(this.phy.basic.gender=='M'){
+            this.genderCheck=true;
+      }
+    }
     viewPhysician(){
        this.isModalOpen=true;
     }
     closeModal(){
         this.isModalOpen=false;
+    }
+    genderCheck(gender){
+       if(gender=='M'){
+           return true;
+       }else{
+           return  false;
+       }
     }
     handleInsertPhysician(){
        

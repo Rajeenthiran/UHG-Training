@@ -7,6 +7,7 @@ export default class SearchPhysicianLWC extends LightningElement {
     @track physicianList=[];
     @track showButton=false;
     @track noInputMsg='';
+   
   
 
     handleLoad(physicianName) {

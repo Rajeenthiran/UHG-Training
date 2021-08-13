@@ -1,4 +1,5 @@
 <template>
+  
     <article class="slds-card" key={phy.number}> 
         <div class="slds-card__header slds-grid">
           <header class="slds-media slds-media_center slds-has-flexi-truncate">
@@ -44,7 +45,12 @@
                      </b></p>
                      <p><b>Last Name: {phy.basic.last_name}
                      </b></p>
-                     <p><b>Gender: {phy.basic.gender}
+                     <p><b>Gender: <template if:true={genderCheck}>
+                          Male
+                     </template>
+                     <template if:false={genderCheck}>
+                      Female
+                 </template>
                     </b></p>
                  </div>
                  <!-- Modal/Popup Box LWC footer starts here -->
