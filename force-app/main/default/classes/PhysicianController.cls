@@ -22,6 +22,9 @@ public with sharing class PhysicianController {
         }else if(response.getStatusCode()==400){
             System.debug('The request couldn’t be understood, usually because the JSON or XML body contains an error.');
             return null;
+        }else if(response.getStatusCode()==404){
+            System.debug('The server has not found anything matching the URI given');
+            return null;
         }
         else{
             // Print get error response and return null

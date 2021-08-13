@@ -85,7 +85,7 @@ public class PhysicianControllerTest {
           'There are items here.'); 
         Test.stopTest();
     }
-     @isTest static void getPhysicianCalloutNoErrorTest(){
+     @isTest static void getPhysicianCalloutOtherErrorTest(){
          Test.startTest(); 
         StaticResourceCalloutMock mock = new StaticResourceCalloutMock();
         mock.setStaticResource('GetPhysicianResource');
@@ -94,6 +94,19 @@ public class PhysicianControllerTest {
         // Associate the callout with a mock response
         Test.setMock(HttpCalloutMock.class, mock);
         List<Object> results1=PhysicianController.getPhysician('peter');
+        System.assertEquals(null, results1,
+          'There are items here.'); 
+        Test.stopTest();
+    }
+     @isTest static void getPhysicianCalloutOtherError404Test(){
+         Test.startTest(); 
+        StaticResourceCalloutMock mock = new StaticResourceCalloutMock();
+        mock.setStaticResource('GetPhysicianResource');
+        mock.setStatusCode(404);
+        mock.setHeader('Content-Type', 'application/json;charset=UTF-8');
+        // Associate the callout with a mock response
+        Test.setMock(HttpCalloutMock.class, mock);
+        List<Object> results1=PhysicianController.getPhysician('555');
         System.assertEquals(null, results1,
           'There are items here.'); 
         Test.stopTest();
