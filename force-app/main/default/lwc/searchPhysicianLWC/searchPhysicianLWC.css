@@ -1,3 +1,5 @@
+
+
 .slds-button_outline-brand {
    padding-top: 120px;
 }
@@ -34,4 +36,7 @@ div.info {
    color: #D63301;
    background-color: #FFCCBA;
    background-image: url('https://i.imgur.com/GnyDvKN.png');
+}
+lightning-button{
+   margin-top: 205px;
 }

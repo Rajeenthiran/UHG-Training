@@ -4,7 +4,7 @@
             <div class="slds-grid slds-gutters">
                 <div class="slds-col">
                   <span>
-                    <div class="slds-p-around_medium lgc-bg">
+                    <div>
                         <lightning-input type="text" placeholder="Search Physician" value={searchPhy} onchange={physicianChange}></lightning-input>
                     </div>
                   </span>
@@ -12,7 +12,7 @@
                 <div class="slds-col">
                   <span>
                     <div class="slds-p-around_medium lgc-bg">
-                    <lightning-button variant="brand-outline" label="Search"  disabled={showButton} onclick={handleSearchPhysician} class="slds-m-left_x-small searchButton"></lightning-button>
+                    <lightning-button  variant="brand-outline" icon-name="utility:search" label="Search"  disabled={showButton} onclick={handleSearchPhysician} class="slds-m-left_x-small searchButton"></lightning-button>
                     </div>
                   </span>
                 </div>

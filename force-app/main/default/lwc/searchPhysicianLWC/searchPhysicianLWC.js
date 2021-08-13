@@ -19,7 +19,7 @@ export default class SearchPhysicianLWC extends LightningElement {
                 this.physicianList = result;
                 this.showButton=false;
                 this.noInputMsg='';
-                console.log(result);
+                // console.log(result);
                 if(result==null){
                     this.noInputMsg='There are no search results';
                 }else{

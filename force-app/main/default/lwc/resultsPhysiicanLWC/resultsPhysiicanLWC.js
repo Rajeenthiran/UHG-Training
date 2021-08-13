@@ -8,11 +8,18 @@ export default class ResultsPhysiicanLWC extends LightningElement {
     @track phyNumber=''
     @track isModalOpen=false;
     @track genderCheck=false;
+    @track phoneNumber;
+    @track city;
+    @track country;
 
     connectedCallback(){
       if(this.phy.basic.gender=='M'){
             this.genderCheck=true;
       }
+      this.phoneNumber=this.phy.addresses[0].telephone_number;
+      this.city=this.phy.addresses[0].city;
+      this.country=this.phy.addresses[0].country_name;
+
     }
     viewPhysician(){
        this.isModalOpen=true;
