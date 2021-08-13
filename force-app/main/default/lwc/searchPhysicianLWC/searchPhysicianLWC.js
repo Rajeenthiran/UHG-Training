@@ -1,14 +1,36 @@
 import { LightningElement,wire,api,track } from 'lwc';
 import getPhysicianList from '@salesforce/apex/PhysicianController.getPhysician';
-
+import getPhysicianListNew from '@salesforce/apex/PhysicianController.getPhysicianListNew';
 export default class SearchPhysicianLWC extends LightningElement {
     @track searchPhy='';
     @track spinner=false;
     @track physicianList=[];
     @track showButton=false;
     @track noInputMsg='';
-   
+    @track isModalOpen=false;
+    @track columns = [
+        { label: 'Physician Name', fieldName: 'Name' },
+        { label: 'Gender', fieldName: 'Gender__c' },
+        { label: 'City', fieldName: 'City__c' },
+        { label: 'Country', fieldName: 'Country__c'  },
+    ];
+    @track phyList=[] ;
   
+    connectedCallback(){
+        getPhysicianListNew()
+            .then(result => {
+                this.phyList = result;
+                 console.log(this.phyList);
+            })
+            .catch(error => {
+                this.error = error;
+                console.log(error);
+               
+            });
+    }
+    closeModal(){
+        this.isModalOpen=false;
+    }
 
     handleLoad(physicianName) {
        this.showButton=true;
@@ -32,9 +54,10 @@ export default class SearchPhysicianLWC extends LightningElement {
                
             });
     }
-    connectedCallback(){
-      
+    handleModalPhysician(){
+        this.isModalOpen=true;
     }
+  
     
    
     

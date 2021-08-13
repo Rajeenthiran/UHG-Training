@@ -63,4 +63,8 @@ public with sharing class PhysicianController {
         // return message                                                
         return resultMap;
     }
+    @AuraEnabled
+    public static List<Physician__c> getPhysicianListNew(){
+      return [SELECT Id,Name,Gender__c,Country__c,City__c FROM Physician__c];
+    }
 }
