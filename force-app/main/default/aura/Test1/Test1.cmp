@@ -1,0 +1,8 @@
+<aura:component  controller="AccountControlelr" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+	<h1>Hi</h1>
+    
+
+    <!-- Brand variant: Identifies the primary action in a group of buttons -->
+    <lightning:button variant="brand" label="Brand" title="Brand action" onclick="{! c.handleAlert }" />
+
+</aura:component>

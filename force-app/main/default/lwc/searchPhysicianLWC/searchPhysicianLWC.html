@@ -1,0 +1,42 @@
+<template>
+    <lightning-card  title="Search Physician">
+        <div class="slds-p-horizontal_small">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                  <span>
+                    <div>
+                        <lightning-input type="text" placeholder="Search Physician" value={searchPhy} onchange={physicianChange}></lightning-input>
+                    </div>
+                  </span>
+                </div>
+                <div class="slds-col">
+                  <span>
+                    <div class="slds-p-around_medium lgc-bg">
+                    <lightning-button  variant="brand-outline" icon-name="utility:search" label="Search"  disabled={showButton} onclick={handleSearchPhysician} class="slds-m-left_x-small searchButton"></lightning-button>
+                    </div>
+                  </span>
+                </div>
+                <div class="slds-col">
+                 <span></span>
+                </div>
+              </div>
+              <div class="info" if:true={noInputMsg}>
+                    {noInputMsg}
+              </div>
+            </div>
+    </lightning-card>
+    <lightning-card  title="Matching Physician">
+        <template if:true={physicianList}>
+            <template for:each={physicianList} for:item="phy">
+              <lightning-layout-item key={phy.number} size="3" class="slds-var-p-around_x-small">
+              <c-results-physiican-l-w-c phy={phy}></c-results-physiican-l-w-c>
+              </lightning-layout-item> 
+            </template>
+        </template>
+        <template if:true={spinner}>
+            <div class="exampleHolder">
+                <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+            </div>
+        </template>
+    </lightning-card>
+</template>
